@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Книжный червь (лабораторная №4)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Чеботарёв Владислав</h1>
+        <h2>Книжный червь и писатель</h2>
+        <img
+            src="images/avatar.jpg"
+            width="300"
+            height="300"
+            alt="Аватар: Чеботарёв Владислав, книжный червь и писатель"
+        >
+    </header>
+    <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#skills">Навыки</a>
+        <a href="#books">Книги на полке</a>
+        <a href="#stats">Статистика чтения</a>
+        <a href="#quotes">Цитаты недели</a>
+        <a href="#contact">Обратная связь</a>
+    </nav>
+    <div class="wrapper">
+        <main>
+            <section id="skills">
+                <h2>Навыки</h2>
+                <ul>
+                    <li>Анализ художественных текстов</li>
+                    <li>Написание рецензий</li>
+                    <li>Работа с источниками</li>
+                    <li>Редактура и вычитка</li>
+                    <li>Создание литературных сценариев</li>
+                </ul>
+            </section>
+            <section id="books">
+                <h2>Книги на полке</h2>
+                <div class="books">
+                    <article class="book-card">
+                        <figure class="book-cover">
+                            <img src="images/cover-1.svg" alt="Обложка книги «Мастер и Маргарита»">
+                        </figure>
+                        <div class="book-info">
+                            <h3 class="book-title">Мастер и Маргарита</h3>
+                            <p class="book-author">Михаил Булгаков</p>
+                            <p class="status status--done">Прочитано</p>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <figure class="book-cover">
+                            <img src="images/cover-2.svg" alt="Обложка книги «Тайная история»">
+                        </figure>
+                        <div class="book-info">
+                            <h3 class="book-title">Тайная история</h3>
+                            <p class="book-author">Донна Тартт</p>
+                            <p class="status status--progress">В процессе</p>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <figure class="book-cover">
+                            <img src="images/cover-3.svg" alt="Обложка книги «Сто лет одиночества»">
+                        </figure>
+                        <div class="book-info">
+                            <h3 class="book-title">Сто лет одиночества</h3>
+                            <p class="book-author">Габриэль Гарсиа Маркес</p>
+                            <p class="status status--done">Прочитано</p>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <figure class="book-cover">
+                            <img src="images/cover-4.svg" alt="Обложка книги «Книжный вор»">
+                        </figure>
+                        <div class="book-info">
+                            <h3 class="book-title">Книжный вор</h3>
+                            <p class="book-author">Маркус Зусак</p>
+                            <p class="status status--progress">В процессе</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="stats" class="stats">
+                <h2>Статистика чтения</h2>
+                <p class="stats-lead">Прочитано страниц по дням: <span id="stats-days" class="stats-days">—</span></p>
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-total">—</span>
+                        <span class="stats-label">Всего страниц</span>
+                    </div>
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-max">—</span>
+                        <span class="stats-label">Максимум за день</span>
+                    </div>
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-high">—</span>
+                        <span class="stats-label">Дней с темпом &gt; 50</span>
+                    </div>
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-lazy">—</span>
+                        <span class="stats-label">Ленивых дней (≤ 20)</span>
+                    </div>
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-average">—</span>
+                        <span class="stats-label">Среднее в день</span>
+                    </div>
+                    <div class="stats-card">
+                        <span class="stats-value" id="stats-share">—</span>
+                        <span class="stats-label">Доля ленивых дней</span>
+                    </div>
+                </div>
+                <p id="stats-summary" class="stats-summary"></p>
+            </section>
+            <section id="quotes">
+                <h2>Цитаты недели</h2>
+                <div class="quotes-grid">
+                    <blockquote class="quote-card">
+                        <p class="quote-text">«Рукописи не горят».</p>
+                        <footer class="quote-meta">
+                            <cite class="quote-author">Михаил Булгаков</cite>
+                            <span class="quote-book">«Мастер и Маргарита»</span>
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="quote-card">
+                        <p class="quote-text">«Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива по-своему».</p>
+                        <footer class="quote-meta">
+                            <cite class="quote-author">Лев Толстой</cite>
+                            <span class="quote-book">«Анна Каренина»</span>
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="quote-card">
+                        <p class="quote-text">«Мы в ответе за тех, кого приручили».</p>
+                        <footer class="quote-meta">
+                            <cite class="quote-author">Антуан де Сент-Экзюпери</cite>
+                            <span class="quote-book">«Маленький принц»</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Обратная связь</h2>
+                <form>
+                    <label for="username">Имя:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите ваше имя" required>
+
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required>
+
+                    <label for="usermessage">Сообщение:</label>
+                    <textarea id="usermessage" name="usermessage" placeholder="Напишите ваше сообщение..." required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Любимый автор и жанр</h3>
+            <p><strong>Автор:</strong> Михаил Булгаков</p>
+            <p><strong>Жанры:</strong> проза, интеллектуальный роман</p>
+        </aside>
+    </div>
+    <footer>
+        <p>© 2026 Чеботарёв Владислав</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
